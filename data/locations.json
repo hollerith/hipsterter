@@ -1,0 +1,332 @@
+[
+  {
+    "name": "Bangalore",
+    "cost": 1000000,
+    "effects": [
+      {
+        "type": "wageMultiplier",
+        "value": -0.1
+      }
+    ],
+    "market": "Asia",
+    "size": 1,
+    "skills": {
+      "productivity": 10,
+      "happiness": 1,
+      "design": 1,
+      "marketing": 1,
+      "engineering": 10
+    }
+  },
+  {
+    "name": "Berlin",
+    "cost": 1000000,
+    "effects": [],
+    "market": "Europe",
+    "size": 1,
+    "skills": {
+      "productivity": 10,
+      "happiness": 5,
+      "design": 8,
+      "marketing": 2,
+      "engineering": 5
+    }
+  },
+  {
+    "name": "Boston",
+    "description": "Cutting-edge research labs",
+    "cost": 1000000,
+    "effects": [{
+      "type": "engineering",
+      "value": 3
+    }],
+    "market": "North America",
+    "size": 1,
+    "skills": {
+      "productivity": 10,
+      "happiness": 5,
+      "design": 2,
+      "marketing": 2,
+      "engineering": 8
+    }
+  },
+  {
+    "name": "Buenos Aires",
+    "cost": 1000000,
+    "effects": [],
+    "market": "South America",
+    "size": 1,
+    "skills": {
+      "productivity": 10,
+      "happiness": 5,
+      "design": 4,
+      "marketing": 5,
+      "engineering": 3
+    }
+  },
+  {
+    "name": "Dubai",
+    "cost": 1000000,
+    "effects": [],
+    "market": "Middle East",
+    "size": 1,
+    "skills": {
+      "productivity": 10,
+      "happiness": 3,
+      "design": 2,
+      "marketing": 6,
+      "engineering": 2
+    }
+  },
+  {
+    "name": "Dublin",
+    "cost": 1000000,
+    "effects": [{
+      "type": "taxRate",
+      "value": -0.05
+    }],
+    "market": "Europe",
+    "size": 1,
+    "skills": {
+      "productivity": 10,
+      "happiness": 2,
+      "design": 2,
+      "marketing": 2,
+      "engineering": 2
+    }
+  },
+  {
+    "name": "Gliese 832c",
+    "cost": 1000000,
+    "effects": [],
+    "market": "Alien",
+    "size": 1,
+    "skills": {
+      "productivity": 10,
+      "happiness": 10,
+      "design": 10,
+      "marketing": 10,
+      "engineering": 10
+    }
+  },
+  {
+    "name": "Hong Kong",
+    "cost": 1000000,
+    "effects": [],
+    "market": "Asia",
+    "size": 1,
+    "skills": {
+      "productivity": 10,
+      "happiness": 5,
+      "design": 2,
+      "marketing": 10,
+      "engineering": 2
+    }
+  },
+  {
+    "name": "London",
+    "cost": 1000000,
+    "effects": [],
+    "market": "Europe",
+    "size": 1,
+    "skills": {
+      "productivity": 10,
+      "happiness": 4,
+      "design": 4,
+      "marketing": 4,
+      "engineering": 4
+    }
+  },
+  {
+    "name": "Mars Colony",
+    "cost": 1000000,
+    "effects": [],
+    "market": "Extra Terra",
+    "size": 1,
+    "skills": {
+      "productivity": 10,
+      "happiness": 10,
+      "design": 10,
+      "marketing": 10,
+      "engineering": 10
+    }
+  },
+  {
+    "name": "New Antarctic Colonies",
+    "cost": 1000000,
+    "effects": [],
+    "market": "Antarctica",
+    "size": 1,
+    "skills": {
+      "productivity": 10,
+      "happiness": 10,
+      "design": 10,
+      "marketing": 10,
+      "engineering": 10
+    }
+  },
+  {
+    "name": "New York",
+    "description": "The hub of ad tech and design",
+    "cost": 1000000,
+    "effects": [{
+      "type": "design",
+      "value": 1
+    }, {
+      "type": "marketing",
+      "value": 1
+    }],
+    "market": "North America",
+    "size": 1,
+    "skills": {
+      "productivity": 10,
+      "happiness": 6,
+      "design": 8,
+      "marketing": 8,
+      "engineering": 6
+    }
+  },
+  {
+    "name": "San Francisco",
+    "description": "The heart of the tech industry",
+    "cost": 1000000,
+    "effects": [{
+      "type": "design",
+      "value": 1
+    }, {
+      "type": "engineering",
+      "value": 1
+    }],
+    "market": "North America",
+    "size": 1,
+    "skills": {
+      "productivity": 10,
+      "happiness": 5,
+      "design": 8,
+      "marketing": 6,
+      "engineering": 8
+    }
+  },
+  {
+    "name": "Seasteading State",
+    "cost": 1000000,
+    "effects": [
+      {
+        "type": "wageMultiplier",
+        "value": -0.1
+      }
+    ],
+    "market": "Antarctica",
+    "size": 1,
+    "skills": {
+      "productivity": 10,
+      "happiness": 10,
+      "design": 10,
+      "marketing": 10,
+      "engineering": 10
+    }
+  },
+  {
+    "name": "Shenzhen",
+    "cost": 1000000,
+    "effects": [
+      {
+        "type": "costMultiplier",
+        "value": -0.1
+      }
+    ],
+    "market": "Asia",
+    "size": 1,
+    "skills": {
+      "productivity": 10,
+      "happiness": 2,
+      "design": 2,
+      "marketing": 2,
+      "engineering": 4
+    }
+  },
+  {
+    "name": "Singapore",
+    "cost": 1000000,
+    "effects": [],
+    "market": "Asia",
+    "size": 1,
+    "skills": {
+      "productivity": 10,
+      "happiness": 4,
+      "design": 2,
+      "marketing": 4,
+      "engineering": 2
+    }
+  },
+  {
+    "name": "Sydney",
+    "cost": 1000000,
+    "effects": [],
+    "market": "Oceania",
+    "size": 1,
+    "skills": {
+      "productivity": 10,
+      "happiness": 5,
+      "design": 3,
+      "marketing": 3,
+      "engineering": 3
+    }
+  },
+  {
+    "name": "Tel Aviv",
+    "cost": 1000000,
+    "effects": [],
+    "market": "Middle East",
+    "size": 1,
+    "skills": {
+      "productivity": 10,
+      "happiness": 4,
+      "design": 2,
+      "marketing": 4,
+      "engineering": 5
+    }
+  },
+  {
+    "name": "Tokyo",
+    "cost": 1000000,
+    "effects": [],
+    "market": "Asia",
+    "size": 1,
+    "skills": {
+      "productivity": 10,
+      "happiness": 4,
+      "design": 8,
+      "marketing": 4,
+      "engineering": 6
+    }
+  },
+  {
+    "name": "Toronto",
+    "cost": 1000000,
+    "effects": [],
+    "market": "North America",
+    "size": 1,
+    "skills": {
+      "productivity": 10,
+      "happiness": 6,
+      "design": 4,
+      "marketing": 5,
+      "engineering": 3
+    }
+  },
+  {
+    "name": "Lagos",
+    "cost": 1000000,
+    "effects": [],
+    "market": "Africa",
+    "size": 1,
+    "skills": {
+      "productivity": 10,
+      "happiness": 5,
+      "design": 4,
+      "marketing": 3,
+      "engineering": 5
+    }
+  }
+]

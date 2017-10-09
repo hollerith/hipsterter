@@ -1,0 +1,232 @@
+.hud
+  padding: 1em
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+
+.hud-center
+  margin: 0 auto
+  text-align: center
+  width: 16em
+
+.hud-left
+  position: absolute
+  left: 1em
+  top: 1em
+
+.hud-right
+  position: absolute
+  right: 0
+  top: 1.6em
+  z-index: 0
+
+.hud-date
+  color: rgb(94, 113, 255)
+  width: 13.5em
+  span
+    display: inline-block
+    width: 9em
+
+.hud-left .cash
+  margin-top: 0.2em
+
+.hud-stats
+  li
+    width: auto
+    height: auto
+    position: relative
+    z-index: 10
+    cursor: help
+  img
+    width: 18px
+
+.hud-actions
+  text-align: right
+  li
+    cursor: pointer
+    display: inline-block
+    background: #239cff
+    color: #fff
+    border-radius: 0.2em
+    margin: 0.5em
+    padding: 0.5em 1em
+    &:hover
+      background: #3f84fb
+.hud-tasks
+  text-align: center
+  li
+    display: inline-block
+    margin: 0.5em
+.hud-actions, .hud-tasks
+  padding: 0 1em
+.start-new-task-highlight
+  animation: cyclebg 2s infinite
+
+@keyframes cyclebg
+  0%
+    background: #239cff
+  50%
+    background: #ff2c2c
+  100%
+    background: #239cff
+
+.progress-bar-outer
+  width: 12em
+  height: 1em
+  background: rgba(0, 0, 0, 0.08)
+  position: relative
+
+.progress-bar-inner
+  height: 100%
+  position: absolute
+  background: rgb(17, 17, 248)
+  max-width: 100%
+
+.hud-time-outer
+  height: 0.5em
+  width: 13.4em
+.hud-time-inner
+  background: #fb3f3f
+
+.hud-left-top
+  overflow: hidden
+.hud-cash
+  clear: both
+.hud-time
+  float: left
+
+.hud-economy
+  width: 1em
+  height: 1em
+  margin: 0.5em
+  border-radius: 4em
+  float: left
+
+.hud-profit-progress .progress-bar-outer
+  margin: 0 auto
+
+.hud-profit-progress-target
+  position: absolute
+  left: 100%
+  padding-left: 0.4em
+
+.hud-profit-progress-ytd
+  position: absolute
+  right: 100%
+  padding-right: 0.4em
+
+.hud-product-dev,
+.hud-promo-dev
+  background: rgba(118, 118, 224, 0.16)
+  padding: 1em 1em 0.4em 1em
+  .progress-bar-outer
+    margin: 0.4em 0 0.5em 0
+    width: 19em
+  .grid
+    padding: 0
+  button
+    width: 100%
+    margin: 0 0 1em 0
+
+.hud-active-products
+  width: 12em
+  .cash
+    float: right
+  li
+    clear: both
+
+.hud-center-board h3
+  font-weight: normal
+
+.hud-challenges
+  position: fixed
+  left: 1em
+  bottom: 2em
+  cursor: pointer
+  display: none
+
+.achievement-wrapper
+  position: fixed
+  right: 2em
+  top: 8em
+  z-index: 1
+
+.achievement, .hud-challenges
+  font-size: 0.9em
+  padding: 1.5em
+  background: rgba(0,0,0,0.4)
+  border-radius: 0.4em
+  color: #fff
+  h1
+    font-size: 1.4em
+  p
+    margin: 0
+
+.achievement
+  width: 22em
+  margin: 1em auto
+
+.weeks
+  margin: 0.25em 0 0 0.6em
+  float: right
+
+.weeks li
+  float: left
+  margin: 0 0.1em
+
+.week-on, .week-off
+  width: 12px
+  height: 12px
+
+.week-on
+  background: rgb(94, 113, 255)
+
+.week-off
+  background: rgba(94, 113, 255, 0.2)
+
+// https://codepen.io/geedmo/pen/InFfd
+$barColor: #29dc6d
+$backColor: #515f78
+
+.progress-radial
+  position: relative
+  width: 32px
+  height: 32px
+  border-radius: 50%
+  background-color: $barColor
+
+.progress-radial .overlay
+  position: absolute
+  width: 18px
+  height: 18px
+  background-color: $backColor
+  border-radius: 50%
+  margin-left: 7px
+  margin-top: 7px
+
+.idle-workers
+  background: #ff2c2c
+  color: #fff
+  text-align: right
+  float: right
+  margin-right: 1.6em
+  font-size: 0.9em
+  display: inline-block
+  padding: 0.2em
+  border-radius: 0.2em
+
+// step of % for created classes
+$step: 1
+
+$loops: round(100 / $step)
+$increment: 360 / $loops
+$half: round($loops / 2)
+@for $i from 0 through $loops
+  .progress-#{$i*$step}
+    @if $i < $half
+      $nextdeg: 90deg + ( $increment * $i )
+      background-image: linear-gradient(90deg, $backColor 50%, transparent 50%, transparent), linear-gradient($nextdeg, $barColor 50%, $backColor 50%, $backColor)
+    @else
+      $nextdeg: -90deg + ( $increment * ( $i - $half ) )
+      background-image: linear-gradient($nextdeg, $barColor 50%, transparent 50%, transparent), linear-gradient(270deg, $barColor 50%, $backColor 50%, $backColor)

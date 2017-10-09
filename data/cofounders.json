@@ -1,0 +1,64 @@
+[{
+  "name": "Beth Poush",
+  "avatar": 7,
+  "description": "A very hard worker and very charismatic",
+  "effects": [{
+    "type": "marketing",
+    "value": 1
+  }, {
+    "type": "productivity",
+    "value": 1
+  }],
+  "attributes": [
+    "Tireless"
+  ],
+  "engineering": 2,
+  "marketing": 2,
+  "design": 2,
+  "productivity": 2,
+  "happiness": 10
+}, {
+  "name": "Jeffrey Zhou",
+  "avatar": 2,
+  "description": "A brilliant product engineer",
+  "effects": [{
+    "type": "design",
+    "value": 1
+  }, {
+    "type": "engineering",
+    "value": 1
+  }],
+  "attributes": [
+    "Tireless"
+  ],
+  "engineering": 2,
+  "marketing": 2,
+  "design": 2,
+  "productivity": 2,
+  "happiness": 10
+}, {
+  "name": "Ben Farrington",
+  "avatar": 9,
+  "description": "Superman.",
+  "effects": [{
+    "type": "cash",
+    "value": 100000
+  }, {
+    "type": "design",
+    "value": 1
+  }, {
+    "type": "engineering",
+    "value": 1
+  }, {
+    "type": "marketing",
+    "value": 1
+  }],
+  "attributes": [
+    "Tireless"
+  ],
+  "engineering": 12,
+  "marketing": 12,
+  "design": 12,
+  "productivity": 12,
+  "happiness": 12
+}]

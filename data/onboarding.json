@@ -1,0 +1,234 @@
+[
+  {
+    "name": "intro",
+    "messages": [
+      "Running a successful startup is not easy, but as your mentor I'll give you guidance.",
+      "You're just starting out, so you'll work from your apartment for now.",
+      "And it's just your cofounder here...but eventually you'll have a buzzing hive of employees.",
+      "Every successful company has to have a <em class='concept'>Product</em>, so let's try creating one. Click <em class='ui-item'>New Task</em> to get started.",
+      "(If you want to skip onboarding, you can open the Settings gear below and do so)"
+    ],
+    "uiSelector": ".start-new-task"
+  }, {
+    "name": "create_product",
+    "messages": [
+      "<em class='concept'>Products</em> are created by combining two different <em class='concept'>Product Types</em>.",
+      "Come up with <em class='special'>innovative</em> combinations for bonuses!",
+      "You only have a couple to choose from now, but later you can unlock and purchase more."
+    ],
+    "popup": "Start a Product"
+  }, {
+    "name": "assign_task",
+    "messages": [
+      "Now let's assign our cofounder to develop the product. Just click on their card.",
+      "They'll contribute <em class='concept'><img src='assets/company/design.png'> Design</em>, <em class='concept'><img src='assets/company/engineering.png'> Engineering</em>, and <em class='concept'><img src='assets/company/marketing.png'> Marketing</em> points according to their <em class='concept'><img src='assets/company/productivity.png'> Productivity</em>.",
+      "The more points, the more successful the product!"
+    ],
+    "popup": "Assign Task"
+  }, {
+    "name": "product_development",
+    "messages": [
+      "Alright, your company is working on its first product!",
+      "Products take time to develop, depending on their difficulty and the productivity of your employees.",
+      "Let's give this product a sec to finish and then prepare release it to the world."
+    ],
+    "conditions": [{
+      "type": "productDeveloping",
+      "op": "eq",
+      "val": true
+    }]
+  }, {
+    "name": "product_finished",
+    "messages": [
+      "Your product is finished!",
+      "Before we can release it to <em class='special'>The Market</em> we need to <em class='concept'>design</em> it.",
+      "That is, we spend product points to power up its performance in <em class='special'>The Market</em>.",
+      "This includes <em class='concept'>Quantity</em> (how many are in The Market), <em class='concept'>Strength</em> (for combat and capturing market shares), and <em class='concept'>Movement</em> (number of steps per turn).",
+      "At this point there might not be much you can do. Just click <em class='ui-item'>Launch</em>."
+    ],
+    "popup": "Product Designer"
+  }, {
+    "name": "recruiting",
+    "messages": [
+      "Now your product will start generating revenue based on a few factors such as captured market share.",
+      "To capture more of The Market you need to build better products. And to build better products, you need the best talent.",
+      "Let's hire an employee through the <em class='ui-item'>Recruiting</em> button."
+    ],
+    "conditions": [{
+      "type": "productsLaunched",
+      "op": "ge",
+      "val": 1
+    }],
+    "uiSelector": ".manage-recruiting"
+  }, {
+    "name": "recruiting_strategies",
+    "messages": [
+      "First we need to pick a recruiting strategy. They vary in the quality of candidates you'll find.",
+      "Less skilled candidates aren't always bad - they're cheaper and can grow to become very skilled.",
+      "Let's pick one and see which candidates come through!"
+    ],
+    "popup": "Recruiting"
+  }, {
+    "name": "hiring",
+    "messages": [
+      "Here are our applicants!",
+      "Most candidate specialize in one skill, but sometimes you'll find a <em class='special'>Unicorn</em> who excels at everything.",
+      "Some candidates also have special attributes which give bonuses to themselves or the whole company!",
+      "If there's a candidate you like, click <em class='ui-item'>Negotiate</em> to start the hiring process."
+    ],
+    "popup": "Hiring"
+  }, {
+    "name": "negotiation",
+    "messages": [
+      "Candidates expect some minimum compensation, but they often can be convinced to take less.",
+      "Depending on the candidate's <em class='concept'>personality</em>, saying certain things may lower their expected salary or increase it.",
+      "When you feel ready, you can make an offer.",
+      "If they aren't happy with it, they'll take a job elsewhere. But they'll be available again later."
+    ],
+    "popup": "Negotiation"
+  }, {
+    "name": "employees",
+    "messages": [
+      "Congratulations on your first employee!",
+      "You can start assigning them to tasks...but note that your employees can <em class='concept'><img src='assets/company/burntout.png'> burn out</em>.",
+      "A burnt out employee can't work for a little bit. But they'll recover in time.",
+      "Avoid burnout by keeping employees <em class='concept'><img src='assets/company/happiness.png'> happy</em>!"
+    ],
+    "conditions": [{
+      "type": "employees",
+      "op": "gt",
+      "val": 1
+    }],
+    "uiSelector": ".manage-employees"
+  }, {
+    "name": "productTypes",
+    "messages": [
+      "You might be feeling a little limited by the product types your company can develop. In the <em class='ui-item'>Product Types</em> menu you can purchase more to work with.",
+      "Further product types are unlocked in other ways!"
+    ],
+    "conditions": [{
+      "type": "productsLaunched",
+      "op": "ge",
+      "val": 2
+    }],
+    "uiSelector": ".manage-productTypes"
+  }, {
+    "name": "theBoard",
+    "messages": [
+      "Now's a good time to mention your Board of Investors.",
+      "Every year they require a <em class='concept'>12% growth in profit</em>. They get upset when you fail to meet that goal.",
+      "You can track their mood and your progress towards this year's profit goal at the top of the screen.",
+      "If you fail too much they'll fire you for incompetence. Try not to let that happen!"
+    ],
+    "conditions": [{
+      "type": "productsLaunched",
+      "op": "ge",
+      "val": 3
+    }]
+  }, {
+    "name": "verticals",
+    "messages": [
+      "You can access even more product types by expanding into new <em class='concept'>Verticals</em>.",
+      "You'll really start to see some <em class='special'>Innovation</em> when you work across verticals!"
+    ],
+    "conditions": [{
+      "type": "productsLaunched",
+      "op": "ge",
+      "val": 4
+    }],
+    "uiSelector": ".manage-verticals"
+  }, {
+    "name": "specialProject",
+    "messages": [
+      "<em class='concept'>Special Projects</em> are expensive tasks but lead to massive advantages and totally new revenue streams.",
+      "Each special project has a few prerequisite products that must be innovated before the special project is available.",
+      "Their development requires some minimum amount of <em class='concept'><img src='assets/company/design.png'> Design</em>, <em class='concept'><img src='assets/company/engineering.png'> Engineering</em>, and <em class='concept'><img src='assets/company/marketing.png'> Marketing</em> points before they are completed."
+    ],
+    "conditions": [{
+      "type": "productsLaunched",
+      "op": "ge",
+      "val": 8
+    }],
+    "uiSelector": ".start-new-task"
+  }, {
+    "name": "acquisitions",
+    "messages": [
+      "Is another company getting in your way?",
+      "With <em class='concept'>Acquisitions</em> you can acquire them! It's pricey, but it provides a large and reliable revenue stream for your company."
+    ],
+    "conditions": [{
+      "type": "annualRevenue",
+      "op": "gt",
+      "val": 5000000
+    }],
+    "uiSelector": ".manage-acquisitions"
+  }, {
+    "name": "lobbying",
+    "messages": [
+      "The government does not have to be an enemy to the Market; it can be a strong ally.",
+      "<em class='concept'>Lobbying</em> tasks are long-term projects that take <em class='concept'><img src='assets/company/marketing.png'> Marketing</em> points and turn them into powerful advantages."
+    ],
+    "conditions": [{
+      "type": "annualRevenue",
+      "op": "gt",
+      "val": 2000000
+    }],
+    "uiSelector": ".start-new-task"
+  }, {
+    "name": "research",
+    "messages": [
+      "To most effectively innovate, you need an Innovation Labs!",
+      "We can assign employees to <em class='concept'>Research</em> tasks and discover new technologies which may provide untold advantages or new product types to experiment with.",
+      "Research is developed mostly with the <em class='concept'><img src='assets/company/engineering.png'> Engineering</em> skill, but the <em class='concept'><img src='assets/company/design.png'> Design</em> skill contributes some too."
+    ],
+    "conditions": [{
+      "type": "productsLaunched",
+      "op": "ge",
+      "val": 5
+    }],
+    "uiSelector": ".start-new-task"
+  }, {
+    "name": "perks",
+    "messages": [
+      "Happy employees burn out less. <em>Perks</em> lift your employees spirits so they take less down time.",
+      "Perks are also attractive to prospective hires, lowering their expected salary.",
+      "Most perks can be upgraded too!"
+    ],
+    "conditions": [{
+      "type": "employees",
+      "op": "ge",
+      "val": 2
+    }],
+    "uiSelector": ".manage-perks"
+  }, {
+    "name": "locations",
+    "messages": [
+      "In order to keep growing, you'll have to expand to other cities and eventually countries.",
+      "Expanding to new locations gives access to new markets, and some places even provide nice bonuses!",
+      "Each location acts as a remote office and can be assigned tasks like any employee."
+    ],
+    "conditions": [{
+      "type": "productsLaunched",
+      "op": "ge",
+      "val": 7
+    }],
+    "uiSelector": ".manage-locations"
+  }, {
+    "name": "promo",
+    "messages": [
+      "People should know and feel good about your company and its products. But that won't happen on its own.",
+      "<em class='concept'>Promo campaigns</em> are tasks that will generate <em class='concept'><img src='assets/company/hype.png'> hype</em> for your company.",
+      "The hype generated by a promo campaign depends mostly on <em class='concept'><img src='assets/company/marketing.png'> Marketing</em> points, but <em class='concept'><img src='assets/company/design.png'> Design</em> contributes too.",
+      "Hype can give huge boosts to the revenue a product generates.",
+      "However, people are fickle -- hype fades over time, and fades faster if there's <em class='concept'><img src='assets/company/outrage.png'> outrage</em>.",
+      "Outrage is generated by products which pollute (e.g. hardware), kill people (e.g. defense), generate debt (e.g. finance), inspire moral panic (e.g. biotech), and by tax evasion.",
+      "But you can mitigate outrage by building distracting products!"
+    ],
+    "conditions": [{
+      "type": "productsLaunched",
+      "op": "ge",
+      "val": 6
+    }],
+    "uiSelector": ".start-new-task"
+  }
+]

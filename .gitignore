@@ -1,0 +1,9 @@
+bundle.js*
+.sass-cache
+node_modules
+*.swp
+*.swo
+*.map
+.tags*
+assets/models/renders/*.png
+update

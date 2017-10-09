@@ -1,0 +1,129 @@
+.onboarding
+  padding: 0 2em 2em 2em
+  max-width: 960px
+  margin: 0 auto
+  input
+    height: 3em
+    font-size: 1.5em
+    border: 0
+    padding: 1em
+    margin: 6em 0
+    width: 100%
+  .selected
+    background: #0039ff
+    color: #fff
+  h4
+    font-weight: normal
+
+.back
+  cursor: pointer
+
+.onboarding-intro
+  margin: 2em 0
+  height: 17.6em
+  font-size: 1.1em
+  line-height: 1.4
+  em
+    background: #3f84fb
+    padding: 0.2em 0.4em
+    color: #fff
+    border-radius: 0.2em
+
+.onboarding-name
+  height: 23.8em
+
+.onboarding-options
+  margin: 2em 0
+  overflow: hidden
+  > li
+    width: 32.33%
+    float: left
+    height: 22em
+    margin-right: 1%
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2)
+    font-family: "Fantasque Sans Mono", monospace
+    background: #fff
+    cursor: pointer
+    font-size: 0.9em
+    border-radius: 0.4em
+    overflow: hidden
+  .effects
+    margin: 0
+    font-size: 0.9em
+    padding: 0.6em 0.8em
+
+.onboarding-options-confirm
+  > li
+    cursor: default
+
+.onboarding-option-info
+  padding: 1em
+  h3
+    font-weight: normal
+
+.onboarding-options
+  img
+    height: 8em
+    margin: 0 auto
+    display: block
+  .onboarding-location
+    width: 100%
+    height: auto
+
+.alert-mentor
+  font-size: 1.2em
+  padding: 2em 2em 1em 2em
+  line-height: 1.4
+  background: #e8e8e8
+  color: #111
+
+.alert-mentor, .market-tutorial
+  em
+    color: #fff
+    &.ui-item
+      background: #3f84fb
+    &.special
+      background: #ff0000
+      background: -moz-linear-gradient(-45deg,  #ff0000 0%, #ffff00 15%, #00ff00 30%, #00ffff 50%, #0000ff 65%, #ff00ff 80%, #ff0000 100%)
+      background: -webkit-linear-gradient(-45deg,  #ff0000 0%,#ffff00 15%,#00ff00 30%,#00ffff 50%,#0000ff 65%,#ff00ff 80%,#ff0000 100%)
+      background: linear-gradient(135deg,  #ff0000 0%,#ffff00 15%,#00ff00 30%,#00ffff 50%,#0000ff 65%,#ff00ff 80%,#ff0000 100%)
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#ff0000',GradientType=1 )
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.4)
+
+.mentor-avatar
+  width: 220px
+  position: absolute
+  margin-left: -9em
+  margin-top: -2em
+
+.demo
+  position: absolute
+  right: -8.5em
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2)
+  border-radius: 0.4em
+
+.concept img
+  width: 18px
+
+.alert-mentor-message
+  text-align: left
+  height: 8em
+  padding-left: 2em
+
+@keyframes pulse
+  0%
+    transform: scale(1)
+  50%
+    transform: scale(1.1)
+  100%
+    transform: scale(1)
+
+.pulse
+  animation-name: pulse
+  animation-duration: 0.6s
+  animation-iteration-count: infinite
+
+.manage-menu li.pulse
+  border-radius: 100%
+  background: rgba(7, 53, 239, 0.5)
+  box-shadow: 0px 0px 12px #0735ef

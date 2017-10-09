@@ -1,0 +1,214 @@
+.market-wrapper, .market-ui
+  pointer-events: none
+  user-select: none
+
+.market-ui
+  z-index: 2
+
+#market.market-active
+  display: block !important
+  position: relative
+  z-index: 1
+
+.market
+  width: 180px
+  height: 400px
+  margin: 1em 0
+  pointer-events: all
+  position: relative
+  font-family: "Fantasque Sans Mono", monospace
+  font-size: 0.85em
+  background: #eee
+  border-radius: 0.4em
+  overflow: hidden
+  box-shadow: 0px 0px 12px rgba(0,0,0,0.2)
+
+.end-turn
+  position: absolute
+  bottom: 0
+  width: 100%
+  border-radius: 0
+  &:disabled
+    background: #ff2c2c
+    color: #fff
+
+.progress-bar, .progress-bar-fill
+  height: 1.5em
+  width: 100%
+  background: #e0e0e0
+
+.progress-bar-fill
+  background: #fb3f3f
+
+.turns-left
+  float: right
+  padding: 0.2em
+
+.turn-notice
+  position: fixed
+  top: 1.2em
+  text-align: center
+  left: 0
+  right: 0
+  font-size: 2em
+  font-family: 'Work Sans'
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.2)
+  color: #fff
+  span
+    display: inline-block
+    padding: 0.2em 0.5em
+    border-radius: 0.2em
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.1)
+    background: #ff2c2c
+.turn-human span
+  background: #29dc6d
+
+.tile-info
+  margin: 1em 0
+  border-bottom: 1px solid #aaa
+  height: 10em
+
+.tile-info, .piece-info
+  padding: 0.8em
+  h5
+    color: #949494
+    font-weight: normal
+    margin-bottom: 0.4em
+
+.tile-name, .piece-name
+  margin: 0.2em 0 0em 0
+  font-size: 1.1em
+  display: block
+.tile-name h6
+  font-weight: normal
+  font-style: italic
+  color: #777
+  font-size: 0.8em
+
+.tile-description
+  color: #888
+
+.player-info
+  border-bottom: 1px solid #aaa
+
+.piece-no-moves
+  background: #ff2c2c
+  color: #fff
+  padding: 0.3em 0.6em 0.2em 0.6em
+  margin: 0.2em 0
+  border-radius: 0.2em
+
+.health
+  color: #29dc6d
+
+.no-health
+  color: #ccc
+
+.market-title
+  position: fixed
+  color: #fff
+  left: 0
+  bottom: 0
+  font-size: 2em
+  font-weight: normal
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3)
+  padding: 1em
+
+.market-share
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  color: #fff
+  z-index: 1
+  h1
+    font-size: 1.8em
+    font-weight: normal
+    text-align: center
+    transform-origin: 0 0
+    width: 100vh
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.2)
+
+.human-market-share
+  float: left
+  background: #3f84fb
+  height: 100%
+  width: 20%
+  padding: 0.1em 0 0 0.4em
+  white-space: nowrap
+  h1
+    transform: rotate(-90deg)
+    position: absolute
+    bottom: 0
+
+.ai-market-share
+  float: right
+  background: #fb3f3f
+  height: 100%
+  width: 20%
+  padding: 0.1em 0.4em 0 0
+  text-align: right
+  white-space: nowrap
+  h1
+    transform: rotate(90deg)
+    position: absolute
+    top: 0
+  .market-share-text-wrapper
+    position: absolute
+    right: 0.4em
+
+.friendly
+  color: #0039FF
+
+.hostile
+  color: #fd1c1c
+
+.show-market-help
+  display: inline-block
+  background: rgba(0,0,0,0.1)
+  padding: 0.2em 0.5em
+  border-radius: 10em
+  font-size: 0.8em
+  opacity: 0.6
+  cursor: pointer
+  pointer-events: all
+  &:hover
+    opacity: 1
+
+.market-help-body
+  background: #000
+  color: #fff
+  padding: 0.5em 2em
+  width: 32em
+  margin: 2em auto
+  border-radius: 0.4em
+  font-size: 1.4em
+  img
+    border-radius: 0.4em
+    margin-right: 1em
+    float: left
+  p
+    clear: both
+    overflow: hidden
+    margin: 2em 0
+
+.market-tutorial
+  display: none
+  position: fixed
+  bottom: 1em
+  background: beige
+  width: 40em
+  right: 2em
+  border-radius: 0.4em
+  box-shadow: 3px 3px 0px rgba(0,0,0,0.2)
+  cursor: pointer
+  p
+    font-size: 1.2em
+    margin: 0
+    padding: 1em
+  img
+    float: left
+    width: 120px
+    margin-right: 1em
+    border-radius: 0.4em 0 0 0.4em

@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Foreign Intervention",
+    "cost": 10000000,
+    "requiredProgress": 40000,
+    "description": "Have the government lend a helping hand in making sovereign nations more receptive to our presence.",
+    "effects": [
+      {
+        "type": "expansionCostMultiplier",
+        "value": -0.05
+      }
+    ]
+  },
+  {
+    "name": "Lower Min. Wage",
+    "cost": 5000000,
+    "requiredProgress": 40000,
+    "description": "It's too high as it is.",
+    "effects": [
+      {
+        "type": "wageMultiplier",
+        "value": -0.05
+      }
+    ]
+  },
+  {
+    "name": "DARPA Grants",
+    "cost": 2000000,
+    "requiredProgress": 40000,
+    "description": "Special funds for special research",
+    "effects": [{
+      "type": "costMultiplier",
+      "value": -0.04
+    }]
+  },
+  {
+    "name": "Tax Breaks",
+    "cost": 10000000,
+    "requiredProgress": 40000,
+    "description": "Is a man not entitled to the sweat of his brow?",
+    "effects": [
+      {
+        "type": "taxRate",
+        "value": -0.05
+      }
+    ]
+  },
+  {
+    "name": "Worker Visas",
+    "cost": 6000000,
+    "requiredProgress": 40000,
+    "description": "Allow more worker visas for companies like ours.",
+    "effects": [
+      {
+        "type": "wageMultiplier",
+        "value": -0.05
+      }
+    ]
+  },
+  {
+    "name": "Lift Research Bans",
+    "cost": 5000000,
+    "requiredProgress": 40000,
+    "description": "Gain exemption from government research regulations",
+    "effects": [
+      {
+        "type": "researchCostMultiplier",
+        "value": -0.1
+      }
+    ]
+  }
+]

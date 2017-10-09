@@ -1,0 +1,1056 @@
+.popups
+  display: none
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 3
+  overflow: auto
+  background: rgba(0,0,0,0.75)
+  pointer-events: all
+
+.popup
+  margin: 5em auto 0 auto
+  font-size: 0.8em
+  position: relative
+  header
+    padding: 1em
+    height: 4.5em
+    color: #fff
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    z-index: 3
+  .close-popup
+    font-size: 3em
+    position: absolute
+    right: 0.8em
+    top: 0.4em
+    line-height: 0.7
+    color: #fff
+    cursor: pointer
+  .actions
+    position: fixed
+    bottom: 1em
+    left: 0
+    right: 0
+    text-align: center
+
+.close-popup
+  cursor: pointer
+
+.cards
+  padding: 2em 0 0 0
+  text-align: center
+  > li
+    width: 24em
+    margin: 0 2em 4em 2em
+    background: #f0f0f0
+    display: inline-block
+    padding: 2em 3em
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2)
+    vertical-align: top
+    border-radius: 0.4em
+    text-align: left
+    position: relative
+    &.selected
+      background: #1948e8 !important
+      color: #fff !important
+  button
+    width: 100%
+  h1
+    font-size: 2.5em
+    font-weight: normal
+  p
+    height: 5em
+    font-size: 1.2em
+  img
+    width: 200px
+    height: 200px
+    margin: 0 auto
+    display: block
+  .subtitle
+    margin: 0
+    font-weight: normal
+
+button.owned
+  background: #29dc6d
+
+.lobbying
+  .cards > li
+    color: #fff
+    height: 36em
+    padding-top: 11em
+    background-size: cover
+    background-position: center center
+    h1
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.2)
+    p
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.5)
+  .title
+    height: 7em
+
+.special_projects
+  color: #fff
+  .cards > li
+    background: #111
+    height: 39em
+    img
+      width: 180px
+      height: 180px
+    h1
+      font-size: 2em
+  p
+    height: 2.5em
+    margin-top: 0
+  .effects
+    margin: 1em 0
+  .prereq
+    font-size: 0.9em
+
+.prereqs
+  margin: 0 0 1em 0
+  font-size: 1.2em
+
+.revenue
+  margin: 0 0 1em 0
+
+.prereq
+  display: inline-block
+  padding: 0.1em 0.3em
+  background: #1f1f1f
+  margin: 1px
+  border-radius: 0.2em
+  &.ok
+    background: #17b051 !important
+    color: #fff !important
+    opacity: 1 !important
+
+.undiscovered
+  position: absolute
+  bottom: 1em
+  left: 0
+  padding: 2em
+
+.acquisitions
+  figure
+    height: 200px
+    width: 100%
+    position: relative
+    margin: 0
+  .title
+    height: 5.5em
+  img
+    max-height: 100%
+    max-width: 100%
+    width: auto
+    height: auto
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+
+.dark_industries
+  background: #000 !important
+  color: #fff !important
+
+.recruiting, .start_a_promo_campaign
+  .cards
+    > li
+      color: #fff
+    p
+      height: 3em
+  .title
+    height: 6em
+
+.recruiting .cards > li
+  background: #113eda
+  background: #239cff
+  background: -moz-linear-gradient(top, #239cff 0%, #1a58ea 100%)
+  background: -webkit-linear-gradient(top, #239cff 0%, #1a58ea 100%)
+  background: linear-gradient(to bottom, #239cff 0%, #1a58ea 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#239cff', endColorstr='#4a79e8',GradientType=0 )
+
+.recruiting .cards .recruiting-robots
+  background: #fc5f5f
+  background: -moz-linear-gradient(top,  #fc5f5f 0%, #ff2323 100%)
+  background: -webkit-linear-gradient(top,  #fc5f5f 0%,#ff2323 100%)
+  background: linear-gradient(to bottom,  #fc5f5f 0%,#ff2323 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc5f5f', endColorstr='#ff2323',GradientType=0 )
+
+.start_a_promo_campaign .cards > li
+  background: #ae5dd4
+  cursor: pointer
+  &:hover
+    background: #9843bf
+  &.selected
+    background: #7e0cb3
+
+
+.lobbying, .recruiting,
+.start_a_promo_campaign, .locations
+  .cash
+    background: #57bb7d
+    color: #fff
+    padding: 0.2em
+    display: inline-block
+    border-radius: 0.2em
+
+.product_types, .start_a_product
+  .cards
+    img
+      width: 100px
+      height: 100px
+      margin: 1em auto 1.5em auto
+    h1
+      font-size: 2em
+    h5
+      position: absolute
+      background: #3f84fb
+      top: -0.4em
+      right: -0.4em
+      font-weight: normal
+      font-size: 1em
+      padding: 0.1em 0.3em 0.2em 0.3em
+      border-radius: 0.2em
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2)
+    .title
+      padding: 1.5em 2em 0.5em 2em
+    > li
+      padding: 0
+      width: 20em
+      height: 20em
+      background: #515f78
+      color: #fff
+      &:hover
+        background: #3f4f6b
+    button
+      border-radius: 0 0 0.4em 0.4em
+      width: 100%
+      margin-bottom: -1px
+      position: absolute
+      bottom: 0
+
+
+.start_a_product
+  .cards
+    > li
+      cursor: pointer
+
+.successful_product_combos
+  .cards
+    > li
+      height: 40em
+    img
+      width: 164px
+      height: 164px
+      margin: 2em auto
+
+.human_resources, .candidates, .assign_task
+  > h1
+    color: #fff
+    text-align: center
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3)
+    font-size: 4em
+    margin: 4em 0 0 0
+  .cards > li
+    padding: 0
+    height: 22em
+    width: 42em
+    h1
+      font-size: 2.1em
+.worker-avatar
+  float: left
+  background: #0039ff
+  height: 22em
+  border-radius: 0.4em 0 0 0.4em
+  width: 15.5em
+  background: #49c0f0
+  background: -moz-linear-gradient(top, #49c0f0 0%, #942fed 100%)
+  background: -webkit-linear-gradient(top, #49c0f0 0%, #942fed 100%)
+  background: linear-gradient(to bottom, #49c0f0 0%, #942fed 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49c0f0', endColorstr='#942fed',GradientType=0 )
+  img
+    margin: 3.5em auto 0 auto
+.worker-info
+  float: left
+  padding: 2em
+  width: 26.5em
+.worker-body
+  margin: 1em 0
+  height: 10em
+  width: 100%
+.worker-stats
+  margin: 1em 0
+  img
+    width: 16px
+    height: 16px
+    display: inline-block
+  li
+    display: inline-block
+    font-size: 1.4em
+    width: 4.5em
+    margin: 0.5em 0.5em 0.7em 0
+.worker-attributes
+  li
+    background: #aaa
+    color: #fff
+    padding: 0.2em 0.4em
+    border-radius: 0.2em
+    font-size: 1.2em
+    margin: 0
+    display: inline-block
+.worker-task,
+.location-task
+  color: #fff
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1)
+.worker-task
+  text-align: center
+  padding: 0 1em
+  margin-top: -3em
+.worker-actions
+  text-align: center
+  button
+    width: auto
+
+[data-tip]
+  cursor: help
+
+.locations
+  .cards > .location-market
+    width: 65em
+    background: #3f84fb
+    color: #fff
+    padding: 0.5em
+.market-location
+  background: #3566d8
+  width: 20em
+  display: inline-block
+  padding: 1em
+  border-radius: 0.4em
+  vertical-align: top
+  height: 24em
+  margin: 0.6em
+  position: relative
+  &:first-child
+    background: none
+    img
+      margin-top: 2em
+  .worker-stats li
+    margin: 0.5em 0.5em 0em 0
+  button
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    border-radius: 0 0 0.4em 0.4em
+    background: #3a70d4
+    &:hover
+      background: #5491fb
+
+.perks
+  .cards > li
+    background: #29dc6d
+    color: #fff
+    width: 42em
+    height: 22em
+    padding: 0
+    .cash
+      background: #17B051
+      color: #fff
+      display: inline-block
+      padding: 0.2em 0.3em
+      border-radius: 0.2em
+  .requires-office-upgrade h1
+    font-size: 1.8em
+    padding: 1em
+    margin-top: 3.2em
+    position: absolute
+    left: 9em
+    width: 14em
+  .maxed-perk h1
+    margin-top: 4.2em
+.owned-perk
+  padding: 1.5em
+  background: rgba(0, 0, 0, 0.1)
+  color: #fff
+  float: left
+  width: 16em
+  border-radius: 0.4em 0 0 0.4em
+  height: 100%
+  img
+    width: 110px
+    height: 110px
+    margin: 1em auto 0 auto
+  .effects
+    font-size: 0.95em
+    margin-top: 0
+    background: none
+  h1
+    font-size: 1.6em
+  h1.unowned
+    margin-top: 4.5em
+  h5
+    color: rgba(0,0,0,0.2)
+.next-perk
+  width: 26em
+  float: left
+  padding: 1em
+  img
+    float: left
+    width: 130px
+    height: 130px
+    margin: 10px
+  p
+    height: 3em
+    margin-bottom: 0
+  .effects
+    margin-top: 0
+
+
+.negotiation-employee
+  padding: 2em
+  width: 100%
+  text-align: center
+  background: #a7c7dc
+  background: -moz-linear-gradient(top, #a7c7dc 0%, #85b2d3 100%)
+  background: -webkit-linear-gradient(top, #a7c7dc 0%, #85b2d3 100%)
+  background: linear-gradient(to bottom, #a7c7dc 0%, #85b2d3 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7c7dc', endColorstr='#85b2d3',GradientType=0 )
+  > img
+    width: 200px
+  .title
+    margin-top: -2em
+.negotiation-dialogue-wrapper
+  width: 100%
+  background: #212121
+  padding: 2em
+  position: relative
+.negotiation-dialogue
+  max-width: 680px
+  margin: 0 auto
+  input
+    width: 100%
+    padding: 0.2em
+    font-size: 2.6em
+    font-family: "Work Sans", "Helvetica", sans-serif
+    font-weight: bold
+    text-align: center
+    border: none
+    color: #fff
+    background: #17b051
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1)
+  button
+    width: 100%
+    border: none
+    border-radius: 0 0 0.4em 0.4em
+    &.return-hiring
+      border-radius: 0.4em
+  h1
+    color: #fff
+    padding: 1em 0 2em 0
+.negotiation-option
+  font-size: 1.6em
+  padding: 1em 0
+  margin: 0.1em
+  cursor: pointer
+  color: #fff
+  &:hover
+    color: #fbf83f
+.negotiation-offer
+  margin-top: 2em
+.require-offer, .offer-result
+  text-align: center
+  padding: 2em
+  color: #fff
+  margin: 2em 0
+.negotiation .popup-body
+  overflow: hidden
+.worker-insight
+  color: #aaa
+.negotiation-wage-factors
+  margin: 1em 0
+  color: #7d7d7d
+.negotiation-result
+  position: absolute
+  top: -2em
+  left: 0
+  right: 0
+.negotiation-result-text
+  background: #333
+  color: #fff
+  text-align: center
+  padding: 1em
+  width: 24em
+  margin: 0 auto
+  border-radius: 0.4em
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2)
+.negotiation-good
+  background: #17b051
+.negotiation-bad
+  background: #ff2c2c
+
+.research
+  .cards > li
+    background: #1b1b1b
+    color: #fff
+    width: 28em
+    height: 42em
+  h5
+    color: rgba(255,255,255,0.2)
+    font-size: 1.2em
+    margin-bottom: 1em
+    &.missing-vertical
+      color: #ff2c2c
+  .prereq
+    background: #333
+    opacity: 0.6
+  .prereqs h5
+    font-size: 1em
+  button
+    width: 21.1em
+    position: absolute
+    bottom: 2em
+
+.new_task
+  width: 32em
+  margin-top: 8em
+  h5
+    color: rgba(255,255,255,0.4)
+    font-weight: normal
+    font-size: 1.5em
+  ul
+    font-size: 2em
+    color: #fff
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.3)
+  li
+    cursor: pointer
+    background: #239cff
+    padding: 0.2em 0.5em
+    border-radius: 0.2em
+    margin: 0.5em 0 0 0
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.2)
+    &:hover
+      background: #29dc6d
+
+.assign_task
+  .cards > li
+    cursor: pointer
+    &.selected
+      background: #5e71ff
+      color: #fff
+    &.already-assigned
+      opacity: 0.7
+
+.tabs
+  position: fixed
+  top: 0
+  left: 8em
+  right: 8em
+  text-align: center
+  color: #fff
+  font-size: 1.6em
+  > li
+    cursor: pointer
+    display: inline-block
+    margin: 0 1em
+    padding: 0.7em 0 0.2em 0
+    &.selected, &:hover
+      border-bottom: 4px solid #f5deb3
+.tab-page
+  display: none
+  &.selected
+    display: block
+
+.tasks
+  .cards
+    h1
+      font-size: 2.2em
+    .subtitle
+      color: rgba(0,0,0,0.4)
+    > li
+      width: 32em
+      padding: 2em
+      &:hover .task-actions
+        display: block
+      &.task-promo
+        background: #7e0cb3
+        color: #fff
+      &.task-research
+        background: #1b1b1b
+        color: #fff
+        .subtitle
+          color: rgba(255,255,255, 0.3)
+      &.task-lobby
+        background-size: cover
+        background-position: center center
+        color: #fff
+        .subtitle
+          color: rgba(255,255,255, 0.6)
+      &.task-product
+        background: #515f78
+        color: #fff
+        figure
+          float: left
+          margin: 1em 0
+          width: 20em
+          img
+            float: none
+            width: 100px
+            height: 100px
+            display: inline-block
+        .stats
+          img
+            width: 20px
+            height: 20px
+            margin-right: 0.3em
+          li
+            font-size: 1.5em
+            margin: 0.6em 0
+      &.task-specialproject
+        color: #fff
+        background: #111
+        .subtitle
+          color: rgba(255,255,255, 0.3)
+        .task-progresses
+          li
+            width: 9.1em
+          .task-progress-outer
+            width: 6.5em
+            background: rgba(100,100,100,0.1)
+      &.task-event
+        background: #f3eec2
+        height: 18em
+        .task-body
+          height: 8.5em
+          padding: 0.7em 0
+        .task-info
+          overflow: hidden
+        .task-progress-outer
+          width: 11em
+          &:first-child
+            margin-right: 1.2em
+  .task-body
+    height: 10em
+    img
+      width: 120px
+      height: 120px
+      float: left
+    p
+      height: auto
+    .effects
+      display: inline-block
+      margin: 0
+
+.task-skills
+  position: fixed
+  top: 0
+  width: 100%
+  padding: 1.2em
+  color: #fff
+  font-size: 1.2em
+  text-align: center
+
+.task-communication-overhead
+  padding: 0.5em 0.7em
+  border-radius: 0.2em
+  margin: 1em 0
+  display: inline-block
+
+.task-toggle-repeat
+  background: #aaa !important
+  opacity: 0.8
+  &.toggled
+    background: #17b051 !important
+    opacity: 1
+
+.task-assignees, .task-no-assignees
+  position: absolute
+  top: 2em
+  right: 2em
+  img
+    width: 20px
+    height: 20px
+  li
+    display: inline-block
+    cursor: pointer
+.task-assignees li, .task-extra-assignees
+  vertical-align: middle
+
+.task-progress-outer,
+.task-progress-inner
+  height: 1.2em
+  background: rgba(0,0,0,0.1)
+.task-progress-inner
+  background: #29dc6d
+
+.no-tasks
+  font-size: 3em
+  color: #fff
+  text-align: center
+  margin: 6em 0 0 0
+
+.task-no-assignees
+  padding: 0.2em 0.5em
+  border-radius: 0.25em
+  font-size: 1em
+  background: #ff2c2c
+  color: #fff
+
+.task-actions
+  display: none
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 2em
+  text-align: center
+  li
+    cursor: pointer
+    background: #3f84fb
+    color: #fff
+    font-size: 1.8em
+    padding: 0.5em 1em
+    display: inline-block
+    margin: 0 0.5em
+    border-radius: 0.1em
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2)
+    &:hover
+      background: #2968d4
+
+.assign_task
+  .the-task
+    .cards
+      padding: 0
+      > li
+        margin: 0
+        height: 18em
+  .tasks
+    position: fixed
+    top: 4em
+    right: 0
+    left: 0
+    z-index: 2
+  .tabs
+    right: 0
+    left: 0
+    top: 14em
+    z-index: 2
+  .tab-page
+    margin-top: 26em
+    padding-bottom: 26em
+  .cards > li,
+  .worker-avatar
+    height: 19em
+  .worker-avatar img
+    margin-top: 2.5em
+  .actions
+    position: relative
+    button
+      position: fixed
+      z-index: 20
+      bottom: 1em
+      left: 0
+      right: 0
+      margin: 0 auto
+      width: 10em
+      box-shadow: 2px 2px 4px rgba(0,0,0,0.2)
+.assign-locations
+  &.cards
+    > li
+      background: #3f84fb
+      padding: 2em 3em
+      color: #fff
+      width: 28em
+      height: 16em
+    .title img
+      width: 24px
+      height: 24px
+      display: inline
+      vertical-align: middle
+      margin-top: -5px
+
+.email-task-success
+  width: 49%
+  float: left
+  background: #29dc6d
+.email-task-failure
+  width: 50%
+  float: right
+  background: #fb3f3f
+  .effects
+    background: #fb3f3f
+    color: #111
+.email-task-solo
+  width: 100%
+.email-task-success,
+.email-task-failure
+  border-radius: 0.2em
+  h4
+    padding: 0.2em 0.4em
+    color: rgba(0,0,0,0.5)
+
+.task-progresses, .task-requires
+  img
+    width: 20px
+    height: 20px
+    margin-right: 0.3em
+  img, li, .task-progress-outer
+    display: inline-block
+
+.task-due
+  margin-right: 2em
+.task-requires
+  img
+    vertical-align: middle
+
+.product-designer-view
+  background: #515f78
+  color: #fff
+  padding: 2em
+  border-radius: 0.4em
+  margin: 4em auto 0 auto
+  width: 36em
+  min-height: 26em
+  position: relative
+  .product-designer-combo
+    position: absolute
+    top: 1em
+    right: 1em
+    img
+      width: 72px
+  .subtitle
+    font-weight: normal
+    color: rgba(0,0,0,0.4)
+  .product-new-discovery
+    background: #ff2c2c
+    padding: 0.2em 0.4em
+    display: inline
+    border-radius: 0.2em
+    position: absolute
+    left: -1.5em
+    top: 0.55em
+  .effects
+    margin-top: 0.2em
+    margin-bottom: 0.4em
+    display: inline-block
+  .product-new-effects
+    margin-top: 1.6em
+  .product-skills
+    margin: 1em 0
+    li
+      display: inline-block
+      margin-right: 2em
+      width: 5em
+      &:first-child
+        width: auto
+    img
+      width: 18px
+      margin-top: -4px
+      vertical-align: middle
+  .product-point-allocator
+    margin: 2em 0
+    h2
+      display: inline-block
+      width: 6em
+      font-weight: normal
+    li
+      margin: 0.5em 0
+  .quantity-stat
+    font-size: 1.4em
+    margin: 0 1.5em
+  .product-pointer-control
+    float: right
+    button
+      display: inline-block
+      padding: 0.2em 0.6em
+      font-weight: bold
+      font-size: 1.3em
+      background: rgba(0, 0, 0, 0.3)
+      color: #fff
+      min-width: auto
+      cursor: pointer !important
+      &:disabled, &.disabled, &.disabled:hover
+        cursor: default !important
+        opacity: 0.5 !important
+        background: rgba(0, 0, 0, 0.3) !important
+      &:hover
+        background: rgba(0, 0, 0, 0.5)
+  .actions
+    position: absolute
+    bottom: -1px
+    margin-top: 1em
+    button
+      width: 100%
+      border-radius: 0 0 0.2em 0.2em
+      background: #17b051
+      text-shadow: 1px 1px 0 rgba(0,0,0,0.1)
+      &:hover
+        background: #ff2c2c
+.product-revenue-per-share
+  padding: 1em
+  color: #fff
+  font-size: 1.5em
+  position: fixed
+  top: 0
+  width: 100%
+  text-align: center
+.skip-market
+  width: 30em
+  padding: 1em
+  margin: 0.5em auto 0 auto
+  background: #3f84fb
+  color: #162d54
+  font-size: 1.2em
+  border-radius: 0.2em
+  cursor: pointer
+  &:hover
+    background: #1866ec
+.product-competitor
+  width: 24em
+  margin: 0.5em auto 0 auto
+  padding: 1em
+  background: #e8e8e8
+  border-radius: 0.2em
+  color: #111
+  font-size: 1.5em
+  position: relative
+  figure
+    float: left
+    margin: 0em 1em 0 0
+    height: 6em
+  img
+    width: 120px
+  p
+    font-style: italic
+    font-size: 0.9em
+  h2
+    font-size: 1.2em
+.product-competitor-difficulty
+  position: absolute
+  background: #3f84fb
+  top: -0.2em
+  right: -0.4em
+  font-weight: normal
+  font-size: 0.8em
+  padding: 0.1em 0.3em 0.2em 0.3em
+  border-radius: 0.2em
+  color: #fff
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2)
+
+.product-point, .expertise-point
+  width: 0.7em
+  height: 1.5em
+  display: inline-block
+  background: rgba(0,0,0,0.2)
+  &.filled
+    background: #3f84fb
+.product-points
+  display: inline-block
+  vertical-align: middle
+  margin-top: -4px
+
+.expertise-points
+  h3
+    font-weight: normal
+    font-size: 1em
+    display: inline-block
+    color: rgba(255, 255, 255, 0.4)
+.expertise-points ul
+  display: inline-block
+  vertical-align: middle
+.expertise-point
+  width: 0.7em
+  height: 0.8em
+  background: rgba(0,0,0,0.1)
+.expertise-point.filled
+  background: #29dc6d
+
+.current-cash
+  position: fixed
+  top: 1em
+  left: 6em
+  right: 6em
+  z-index: 2
+.current-cash-value
+  background: #29dc6d
+  color: #fff
+  padding: 0.2em
+  width: 12em
+  font-size: 1.6em
+  text-align: center
+  border-radius: 0.2em
+  text-shadow: 1px 1px 2px #17b051
+  margin: 0 auto
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.1)
+
+.settings-options
+  text-align: center
+  padding: 2em 0
+  li
+    cursor: pointer
+    color: #fff
+    font-size: 2.5em
+    margin-bottom: 0.8em
+    &:hover
+      color: #239cff
+
+.accounting-body
+  width: 42em
+  margin: 2em auto
+  font-size: 1.4em
+  table
+    margin: 0.5em 0 2em 0
+    color: #fff
+  td
+    width: 18em
+  .accounting-income
+    background: #29dc6d
+    padding: 2em 2em 0.5em 2em
+    border-radius: 0.4em
+    color: #096d2f
+  .accounting-costs
+    background: #ff2c2c
+    padding: 2em 2em 0.5em 2em
+    border-radius: 0.4em
+    color: #610909
+    margin-bottom: 2em
+
+.toggle-filter, .toggle-completed, .popup-aux-button
+  background: #3f84fb
+  display: block
+  padding: 0.5em 0.7em
+  font-size: 1.2em
+  margin: 0.5em 0 0 0
+  width: 10em
+  border-radius: 0.2em
+  cursor: pointer
+  &:hover
+    background: #239cff
+.popup-aux-button
+  width: 12em
+
+.challenges
+  .cards > li
+    background: #222
+    color: #fff
+    opacity: 0.5
+    height: 16em
+    h1
+      font-size: 2em
+    &.finished
+      opacity: 1
+      background: #17b051
+
+.popup-description
+  width: 24em
+  margin: 0.5em 0
+
+.paused-notice
+  position: fixed
+  bottom: 1em
+  right: 2.5em
+  color: rgba(255,255,255,0.5)
